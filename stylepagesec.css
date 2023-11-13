@@ -1,0 +1,321 @@
+body{
+    width : 100%;
+    height: 100vh;
+    background-image: url(images/main.png);
+    background-color: #222222;
+    background-attachment: fixed;
+
+}
+h2{
+    color:#fff;
+}
+/*animation lettres*/
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.falling-text {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 3em;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+}
+
+.falling-text span {
+    display: inline-block;
+    opacity: 0;
+    animation: fall 0.5s linear forwards;
+    animation-delay: 0.1s;
+    /* Ajoutez un léger délai pour chaque lettre */
+}
+
+/************************************ PARTIE 1 ***************************************/
+#fille {
+    height: 50%;
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.sec-1 {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    
+}
+
+.sec-2 {
+    text-align: justify;
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 2%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 50px;
+    margin-top: 2%;
+    
+}
+
+#flyer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+#flyer a{
+    display: flex;
+    width: 40%;
+    border: none;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#télécharger:hover{
+    background-color: blue !important;
+}
+/************************************ FIN PARTIE 1 ***************************************/
+
+
+
+/************************************ PARTIE  2 ***************************************/
+
+#card-img-top {
+    border-radius: 15%;
+    padding: 5%;
+    width: 100%;
+    margin-top: 4%;
+    max-width: 100%;
+    height: auto;
+}
+
+#card {
+    width: 80%;
+    border-radius: 8%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/main.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#card-body {
+    padding: 25px;
+    margin-top: -15px;
+
+}
+
+.card-title {
+    text-align: center;
+
+}
+
+.btn {
+    width: 40%;
+    background-color: #36678D !important;
+}
+
+.btn-primary {
+    background-color: #36678D !important;
+}
+
+.btn-primary:hover {
+    background-color: blue !important;
+}
+
+.owl-carousel .item {
+    transform: scale(0.8);
+    /* Échelle des éléments en retrait */
+    transition: transform 0.5s ease-in-out;
+}
+
+.owl-carousel .center .item {
+    transform: scale(1);
+    /* Échelle de l'élément du milieu */
+}
+
+.owl-carousel .center .next .item,
+.owl-carousel .center .prev .item {
+    transform: scale(0.8);
+    /* Échelle des éléments à gauche et à droite du milieu */
+}
+
+
+.owl-carousel {
+    position: relative;
+    margin-left: 4%;
+    margin-top: 2.5%;
+}
+
+
+.custom-navigation {
+    text-align: center;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+}
+
+.custom-prev,
+.custom-next {
+    background-color: #36678D;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    /* Ajustez cette valeur pour régler l'espacement entre les boutons */
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background-color: blue;
+}
+
+.owl-nav {
+    text-align: center;
+    margin-right: 11%;
+    margin-top: 3%;
+}
+
+/************************************ FIN PARTIE 2 ***************************************/
+
+
+
+/************************************ PARTIE  3 ***************************************/
+
+
+.titrelesavsaistu {
+    margin-top: 8%;
+    margin-left: 19%;
+
+}
+
+.partenaire {
+    display: flex;
+    margin-top: 3%;
+    padding-left: 3%;
+    margin-bottom: 10%;
+}
+
+.lesavaistu {
+    width: 100%;
+    background-image: url(images/lesavaistu.png);
+    background-repeat: no-repeat;
+}
+
+
+.paragraphe {
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 30%;
+}
+
+.image {
+    margin-right: 8%;
+    margin-top: 1%;
+    width: 35%;
+}
+
+#rond {
+    width: 120%;
+}
+/************************************ FIN PARTIE 3 ***************************************/
+
+
+
+/*Styles pour les écrans de largeur maximale de 768px */
+@media (max-width: 768px) { 
+
+    /* PARTIE 1 */
+    .falling-text {
+        font-size: 24px;
+    }
+    #fille{
+        display: none;
+    }
+    #flyer a{
+        width: 60%;
+    }
+    /* FIN PARTIE 1 */
+
+
+    /*  PARTIE 2 */
+    #card{
+        margin-left: 15%; 
+    }
+    /* FIN PARTIE 2 */
+
+
+    /*  PARTIE 3 */
+    .titrelesavsaistu {
+        display:flex;
+        justify-content: center;
+        margin-left: 0%;
+    }
+    .lesavaistu{
+        background-image: none;
+    }
+    .paragraphe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        width: 70%;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        padding: 2%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        z-index: 111;
+    }
+
+    .image{
+        display: flex;
+        align-items: center;
+        margin-left: 20%;
+        z-index: 222;     
+    }
+    /* FIN PARTIE 3 */
+   
+}
+
+
+/* Styles pour les écrans de largeur maximale de 1200px */
+@media (max-width: 1200px) {
+    .lesavaistu{
+        z-index: 222;
+        position: relative;
+        text-align: justify;
+    }
+    .paragraphe{
+        margin-left: 50%;
+       
+        
+    }
+    .image{
+        width: 20%;
+        display: flex;
+        align-items: center;
+    }
+        
+
+}
+
+
+
+
+
+
+
+
